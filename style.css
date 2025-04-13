@@ -20,33 +20,13 @@ input {
 button {
   padding: 8px 10px;
   cursor: pointer;
-}
-li {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-li span {
-  flex-grow: 1;
-}
-li input {
-  width: 100%;
-}
-li button {
-  margin-left: 4px;
-}
-
-button {
-  padding: 8px 10px;
-  cursor: pointer;
   margin-left: 8px; /* 👈 add this */
 }
 
-input {
-  width: calc(100% - 60px);
+select {
+  margin-top: 10px;
   padding: 8px;
-  margin-right: 4px;
-  margin-bottom: 10px; /* 👈 added this */
+  width: 100%;
 }
 
 ul {
@@ -62,6 +42,10 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+li.completed {
+  background-color: #d4f5d1;
 }
 
 li button {

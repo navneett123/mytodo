@@ -9,10 +9,22 @@
 <body>
   <div class="container">
     <h1>📝 Todo List</h1>
+
+    <!-- Input field and add button -->
     <input type="text" id="todoInput" placeholder="Add a new task..." />
     <button onclick="addTodo()">Add</button>
+    
+    <!-- Filter Dropdown -->
+    <select id="filter" onchange="applyFilter()">
+      <option value="all">All</option>
+      <option value="completed">Completed</option>
+      <option value="pending">Pending</option>
+    </select>
+
+    <!-- Task list -->
     <ul id="todoList"></ul>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
